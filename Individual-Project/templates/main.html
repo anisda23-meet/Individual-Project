@@ -6,6 +6,12 @@
 	<title>Main</title>
 
 	<style>
+
+body{
+        background-color: #F3EBF6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
 .card {
 	position: absolute;
   left: 150px;
@@ -15,6 +21,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+   border-radius: 1.5em;
 }
 
 .card1 {
@@ -26,17 +33,19 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+   border-radius: 1.5em;
 }	
 
 .card2 {
 	position: absolute;
-  left: 540px;
+  left: 550px;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
   margin: auto;
   text-align: center;
-  font-family: arial;
+  font-family: arial; 
+  border-radius: 1.5em;
 }
 
 .price {
@@ -52,8 +61,9 @@
   background-color: #8C55AA;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
+  border-radius: 1.5em;
 }
 
 .card1 button {
@@ -64,8 +74,9 @@
   background-color: #8C55AA;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
+  border-radius: 1.5em;
 }
 
 .card2 button {
@@ -76,44 +87,59 @@
   background-color: #8C55AA;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   font-size: 18px;
+  border-radius: 1.5em;
 }
 
 .card button:hover {
   opacity: 0.7;
+  border-radius: 1.5em;
 }
 
 .card1 button:hover {
   opacity: 0.7;
+  border-radius: 1.5em;
 }
 
 .card2 button:hover {
   opacity: 0.7;
+  border-radius: 1.5em;
 }
+
+.sign12 {
+	padding-top: 40px;
+	color: #FF00CC;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
 </style>
 
 </head>
 <body>
+<br><br>
+<h1 class="sign12" align="center"> BUY NOW! YOU DON'T HAVE TIME TO CHOOSE! THERE ARE ANTS!</h1>
+<br><br>
+
 <div class="card">
   <img src="/static/1.jpg" alt="Denim Jeans" style="width:100%">
   <h1>Spicy Killer</h1>
-  <p class="price">$29.99</p>
-  <p><button>Buy Now</button></p>
+  <p class="price">$9.99</p>
+  <p><a href="/"><button>Buy Now</button></a></p>
 </div>
 
 <div class="card1">
   <img src="/static/2.jpg" alt="Denim Jeans" style="width:100%">
   <h1>K300</h1>
-  <p class="price">$34.99</p>
-  <p><button>Buy Now</button></p>
+  <p class="price">$24.99</p>
+  <p><a href="/"><button>Buy Now</button></a></p>
 </div>
 
 <div class="card2">
   <img src="/static/4.jpeg" alt="Denim Jeans" style="width:100%">
   <h1>Terro Magic</h1>
   <p class="price">$19.99</p>
-  <p><button>Buy Now</button></p>
+  <p><a href="/"><button>Buy Now</button></a></p>
 </div>
 </body>
 </html>

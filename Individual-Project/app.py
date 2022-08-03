@@ -54,6 +54,18 @@ def signup():
 
 @app.route("/main", methods = ['GET', 'POST'])
 def main():
+    if request.method == 'POST':
+        email = request.form['email']
+        username = request.form['username']
+        password = request.form['password']
+        user = {"email" : email, "username" : username, "password" : password}
+        try:
+            login_session['user'] = auth.create_user_with_email_and_password(email, password)
+            db.child('Users').child(login_session['user']['localId']).set(user)
+        except:
+           error = "Authentication failed"
+        return redirect(url_for('main'))
+    else:
         return render_template("main.html")
 #Code goes above here
 
