@@ -36,6 +36,14 @@
         font-weight: bold;
         font-size: 40px;
     }
+
+    .sign2 {
+        padding-top: 1px;
+        color: #FF00CC;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
     
     .un {
     width: 76%;
